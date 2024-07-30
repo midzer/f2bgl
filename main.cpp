@@ -9,6 +9,8 @@
 #include <string.h>
 #include "stub.h"
 
+#include "gl4esinit.h"
+
 const char *g_caption = "Fade2Black/OpenGL";
 
 static const char *kIconBmp = "icon.bmp";
@@ -277,6 +279,7 @@ static int transformPointerY(int y) {
 }
 
 int main(int argc, char *argv[]) {
+	initialize_gl4es();
 	GameStub *stub = GameStub_create();
 	if (!stub) {
 		return -1;

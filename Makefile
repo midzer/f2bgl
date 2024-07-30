@@ -4,7 +4,7 @@ SDL_LIBS = `sdl2-config --libs`
 
 LIBS = $(SDL_LIBS) -lGL -lz -lWildMidi -lfluidsynth -lm
 
-#LTO = -flto
+LTO = -flto -O3 -fno-rtti -fno-exceptions
 CXXFLAGS += -Wall -Wno-sign-compare -Wpedantic -MMD $(FFMPEG_CFLAGS) $(SDL_CFLAGS) $(LTO)
 LDFLAGS  += $(LTO)
 

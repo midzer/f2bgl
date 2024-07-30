@@ -6,7 +6,7 @@
 #ifdef USE_GLES
 #include <GLES/gl.h>
 #else
-#include <SDL_opengl.h>
+#include "GL/gl.h"
 #endif
 #include <math.h>
 #include <sys/time.h>

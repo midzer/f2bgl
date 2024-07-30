@@ -8,7 +8,7 @@
 // WildMidi
 //
 
-#include <wildmidi_lib.h>
+#include "wildmidi_lib.h"
 
 // convert drivers/custom.gus to wildmidi configuration file
 static void writeConfigurationFile(File *fp, Resource *res) {
@@ -120,7 +120,7 @@ XmiPlayer *XmiPlayer_WildMidi_create(Resource *res) {
 // FluidSynth
 //
 
-#include <fluidsynth.h>
+#include "fluidsynth.h"
 
 struct XmiEvent {
 	int deltaTime;
